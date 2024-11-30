@@ -39,7 +39,7 @@ const Contact = () => {
           </p>
 
           <AnimatedTitle
-            title="v<b>v</b>v"
+            title="v<b>v</b>v. <br /> v<b>v</b>v. <br /> v<b>v</b>v."
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 
