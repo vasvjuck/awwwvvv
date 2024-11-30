@@ -83,7 +83,7 @@ const Hero = () => {
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
-      {/* {isLoading &&
+      {isLoading &&
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
           <div className="three-body">
             <div className="three-body__dot"></div>
@@ -91,7 +91,7 @@ const Hero = () => {
             <div className="three-body__dot"></div>
           </div>
         </div>
-      } */}
+      }
       <div id="video-frame" className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75">
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
@@ -119,30 +119,26 @@ const Hero = () => {
           <video
             ref={nextVideoRef}
             src={getVideo(currentIndex === totalVideos - 1 ? 1 : currentIndex)}
-            // autoPlay
+            autoPlay
             loop
             muted
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
           />
         </div>
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">G<b>a</b>ming</h1>
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">E<b>n</b>joyyy</h1>
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font hero-heading text-blue-100">redefi<b>n</b>e</h1>
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
-            </p>
+            <h1 className="special-font hero-heading text-blue-100">vv<b>v</b></h1>
             <Button
-              id="watch-trailer"
-              title="Watch trailer"
+              title="vvv"
               leftIcon={<TiLocationArrow />}
               containerClass="!bg-yellow-300 flex-center gap-1"
             />
           </div>
         </div>
       </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">G<b>a</b>ming</h1>
+      <h2 className="special-font hero-heading absolute bottom-5 right-5 text-black">E<b>n</b>joyyy</h2>
     </div>
   )
 }
